@@ -85,6 +85,7 @@ body {
 .btn:focus {
 	background-color: var(--primary-active-color);
 	color: var(--primary-text-color-light);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Utility*/
@@ -479,16 +480,17 @@ img {
 
 .footer .container {
 	display: flex;
+	align-items: baseline;
 }
 
 .left-part,
 .middle-part {
-	flex-basis: calc((100% - 90px) / 4);
-	margin-right: 30px;
+	width: 231px;
+	margin-right: 70px;
 }
 
 .middle-part {
-	padding-top: 12px;
+	width: 206px;
 }
 
 .footer .logo {
@@ -531,6 +533,10 @@ img {
 
 .footer-header {
 	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primary-text-color-light);
 }
